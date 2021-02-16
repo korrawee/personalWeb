@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Productive Todo</title>
+</head>
+<body>
+    <div class="main-section">
+        <div class="list">
+            <header>Your Tasks</header>
+            <form>
+                <button class="button-todo">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+                <input type="text" class="input-todo">
+                
+            </form>
+            <div class="container">
+                <ul class="todo-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="menu-section">
+        <button class="task" id="task">
+            <i class="far fa-check-circle"></i> Task
+        </button>
+        <button class="important" id="important">
+            <i class="far fa-star"></i> Important
+        </button>
+        <button class="completed" id='completed'>
+            <i class="fas fa-calendar-check"></i> Completed
+        </button>
+        <button class="uncompleted" id='uncompleted'>
+            <i class="fas fa-calendar-check"></i> Uncompleted
+        </button>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

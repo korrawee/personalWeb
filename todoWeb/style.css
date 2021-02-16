@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:rgb(27, 27, 27);
+    color:white;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+header,form {
+    
+    display: flex;
+    min-height: 2vh;
+    font-size: 1.5rem;
+    justify-content: left;
+    align-items: center;
+}
+header{
+    margin: 1rem;
+    color: rgb(57, 166, 255);
+    font-size: 2rem;
+}
+form input, form button{
+    padding: 0.4rem;
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+    align-content: center;
+}
+form input{
+    min-width: 100%;
+}
+.main-section{
+    background-color: rgb(27, 27, 27);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+
+}
+.menu-section{
+    background-color: rgb(47, 47, 47);
+    flex-wrap: wrap;
+    flex-flow: row;
+
+}
+.task,
+.important,
+.completed,
+.uncompleted{
+    border: none;
+    min-width: 20vw;
+    background-color: rgb(47, 47, 47);
+    color:white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.uncompleted{
+    border-bottom: 1px solid rgb(105, 105, 105);
+    padding-bottom: 1rem;
+}
+.task{
+    margin-top: 1.5rem;
+}
+.task i{
+    color:rgb(57, 166, 255);
+}
+.important i{
+    color:rgb(255, 86, 156);
+}
+.completed i{
+    color:rgb(109, 180, 145);
+}
+.uncompleted i{
+    color:rgb(226, 69, 57);
+
+}
+form button{
+    color: black;
+    background: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+form button:hover{
+    background: black;
+    color:white;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 100%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background:rgb(44, 44, 44);
+    color:white;
+    font-size: 2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    transition: all 0.3s ease;
+}
+.todo li{
+    flex:1;
+}
+.trash-btn,
+.complete-btn,
+.important-btn{
+    background: rgb(44, 44, 44);
+    color: rgb(197, 197, 197);
+    border: none;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    transition: all 0.5s ease ;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.item{
+    padding: 0rem 0.5rem;
+}
+.fa-trash-alt,
+.fa-star,
+.fa-circle{
+    pointer-events: none;
+}
+.complete-action{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.delete-anime{
+    transform: translateY(8rem);
+    opacity: 0;
+}
+.important-action{
+    color: rgb(255, 86, 156);
+}
