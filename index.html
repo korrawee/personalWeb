@@ -23,13 +23,13 @@
                 <a href="#">Home</a>
             </li>
             <li class="nav-link">
-                <a href="#">Schedual</a>
+                <a>Schedule</a>
             </li>
             <li class="nav-link">
-                <a href="#">About</a>
+                <a>About</a>
             </li>
             <li class="nav-link">
-                <a href="#">Todo</a>
+                <a>Todo</a>
             </li>
         </ul>
     </nav>
@@ -45,8 +45,8 @@
             </div>
         </section>
 
-        <!--Schedual-->
-        <section class="schedual" id="schedual">
+        <!--Schedule-->
+        <section class="schedule" id="schedule">
             <table class="table-content">
                 <thead>
                     <tr>
@@ -114,14 +114,77 @@
 
         <!--about me-->
         <section class="about">
-            <a href="./aboutMe/aboutMe.html">About Me</a>            
-            <h2>Coming Soon...</h2>
+            <h1 class="head">About Me</h1>
+            <h1 class="topic">My Activity</h1>
+            <div class="grid">
+                <div class="act">
+                    <img src="/aboutMe/me.jpg">
+                    <div class="info">
+                    <h2 class="name">Mr. Korrawee Somyos</h2>
+                    <p class="role">Sophomore at KMUTNB</p>
+                    <p>Rough time but learned things a lot</p>
+                    <p>s6201012620023@email.kmutnb.ac.th</p>
+                    </div>
+                    <button class="btn">Contact</button>
+                </div>
+            
+                <div class="act">
+                    <img src="./aboutMe/skate.jpg">
+                    <div class="info">
+                    <h2 class="name">Mr. Wave</h2>
+                    <p class="role">Skateboarder</p>
+                    <p>"When I skate, I'm free."</p>
+                    <p>korrawee.somyos@gmail.com</p>
+                    </div>	
+                    <button class="btn">Contact</button>
+                </div>
+                
+                <div class="act">
+                    <img src="./aboutMe/talae.jpg">
+                    <div class="info">
+                    <h2 class="name">Aunt Wave</h2>
+                    <p class="role">Babysitter</p>
+                    <p>look after my grandson</p>
+                    <p>wavemaza555@gmail.com</p>
+                    </div>
+                    <button class="btn">Contact</button>
+                </div>
+            </div>
         </section>
 
         <!--todo list-->
-        <section class="todo">
-            <a href="./todoWeb/todoWeb.html">Todo list</a>
-            <h2>Coming Soon...</h2>
+        <section class="todo-section">
+            <div class="main-section">
+                <div class="list">
+                    <header>My Tasks</header>
+                    <form>
+                        <button class="button-todo">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                        <input type="text" class="input-todo">
+                        
+                    </form>
+                    <div class="container">
+                        <ul class="todo-list">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-section">
+                <button class="task" id="task">
+                    <i class="far fa-check-circle"></i> Task
+                </button>
+                <button class="important" id="important">
+                    <i class="far fa-star"></i> Important
+                </button>
+                <button class="completed" id='completed'>
+                    <i class="fas fa-calendar-check"></i> Completed
+                </button>
+                <button class="uncompleted" id='uncompleted'>
+                    <i class="fas fa-calendar-check"></i> Uncompleted
+                </button>
+            </div>
         </section>
     </main>
     
